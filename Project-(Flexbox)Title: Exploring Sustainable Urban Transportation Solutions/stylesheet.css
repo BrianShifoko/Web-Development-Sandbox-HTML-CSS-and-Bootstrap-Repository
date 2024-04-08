@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('Images/Background\ dark.jpg');
+    background-size: cover;
+    
+}
+
+/*header*/
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+#branding{
+    color: antiquewhite;
+    font-size: 14px;
+}
+span{
+    color: red;
+}
+
+span:hover{
+    font-size: 1.1em;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: rgb(63, 225, 171);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+    text-decoration: underline;
+    font-size: 1.1em;
+    transition: .3s;
+}
+.current{
+    background-color:  rgb(147, 147, 117);
+    border-radius: 18px;
+    transition: opacity 0.3s ease;
+}
+.current{
+    opacity: 0.5; 
+}
