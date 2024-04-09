@@ -1,0 +1,139 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: radial-gradient(circle, #F5CB5C, #FD8C45);
+    color: #333333;
+    display: flex;
+}
+
+.mainbox {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Header styles */
+header {
+    background-color: #7D3C98; /* Background color */
+    color: #FFFFFF; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 35px;
+}
+
+span {
+    color: red; /* Color for specific span elements */
+}
+
+h1 {
+    font-weight: bold; /* Bold font weight */
+    font-size: 30px; /* Font size for heading */
+}
+
+h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    text-align: center; /* Center align the text */
+}
+
+h1 span {
+    display: inline-block;
+    animation: bounce 1s infinite alternate; /* Apply bounce animation */
+    transform-origin: center; /* Set transform origin to the center of each letter */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0) scale(1); /* Initial position and scale */
+    }
+    100% {
+        transform: translateY(-10px) scale(1.1); /* Bouncing position and scale */
+    }
+}
+
+/* Navigation menu styles */
+nav {
+    font-size: 16px; /* Font size for navigation menu */
+    word-spacing: 12px; /* Spacing between words */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #FD8C45; /* Link color */
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold; /* Bold font weight */
+}
+
+nav ul li a:hover {
+    color: red; /* Hover color */
+    text-decoration: underline; /* Underline on hover */
+    font-size: 1.1em; /* Increased font size on hover */
+    transition: .3s; /* Smooth transition */
+}
+
+nav ul li.active a {
+    position: relative; /* Required for stacking pseudo-elements */
+}
+
+nav ul li.active a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Adjust to control the distance between text and underline */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #000; /* Color of the underline */
+}
+
+nav ul li.active a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust to control the distance between text and fill-like effect */
+    left: 0;
+    width: 100%;
+    height: 6px; /* Adjust the height of the fill-like effect */
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent fill-like effect */
+}
+
+/* Article styles */
+article {
+    background-color: #FFFFFF; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px; /* Add space between articles */
+    padding: 20px; /* Add padding inside articles */
+}
+
+article h2 {
+    color: #333333; /* Title color */
+}
+
+article p {
+    color: #666666; /* Text color */
+}
+
+.parag1 {
+    margin-top: 50px; /* Top margin for specific paragraph */
+}
+
+/* Footer styles */
+footer {
+    background-color: #7D3C98; /* Footer background color */
+    color: #FFFFFF; /* Text color */
+    padding: 20px 0; /* Add padding to top and bottom */
+    position: fixed; /* Fix footer position */
+    bottom: 0; /* Position footer at the bottom */
+    width: 100%; /* Make footer span the full width of the viewport */
+    text-align: center; /* Align text to the center */
+}
