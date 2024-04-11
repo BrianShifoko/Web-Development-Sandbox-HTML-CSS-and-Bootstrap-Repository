@@ -137,3 +137,43 @@ footer {
     width: 100%; /* Make footer span the full width of the viewport */
     text-align: center; /* Align text to the center */
 }
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Adjustments for header */
+    header {
+        padding: 20px; /* Decrease padding */
+    }
+
+    h1 {
+        font-size: 24px; /* Decrease font size */
+    }
+
+    /* Adjustments for navigation menu */
+    nav ul {
+        font-size: 14px; /* Decrease font size */
+        word-spacing: 8px; /* Decrease word spacing */
+    }
+
+    /* Adjustments for articles */
+    article {
+        padding: 15px; /* Decrease padding */
+    }
+
+    article h2 {
+        font-size: 20px; /* Decrease font size */
+    }
+
+    article p {
+        font-size: 16px; /* Decrease font size */
+    }
+
+    .parag1 {
+        margin-top: 30px; /* Decrease top margin */
+    }
+
+    /* Adjustments for footer */
+    footer {
+        padding: 10px 0; /* Decrease padding */
+    }
+}
